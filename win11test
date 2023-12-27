@@ -4,8 +4,6 @@
 if ((Get-MyComputerModel) -match 'Virtual') {
     Write-Host  -ForegroundColor Green "Setting Display Resolution to 1600x"
     Set-DisRes 1600
-Start-Sleep -seconds "6000"
-Exit 1
 }
 
 Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
