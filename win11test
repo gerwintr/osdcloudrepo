@@ -48,7 +48,7 @@ $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeplo
 #================================================
 #  [PostOS] SetupComplete CMD Command Line
 #================================================
-Write-Host -ForegroundColor Green "Create C:\Windows\Setup\Scripts\SetupComplete.cmd"
+Write-Host -ForegroundColor Green "Create C:\OSDCloud\Scripts\SetupComplete.cmd"
 $SetupCompleteCMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy Bypass -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
