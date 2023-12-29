@@ -45,18 +45,6 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
 }
 $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeploy.json" -Encoding ascii -Force
 
-#================================================
-#  [PostOS] SetupComplete CMD Command Line
-#================================================
-Write-Host -ForegroundColor Green "Create C:\OSDCloud\Scripts\SetupComplete.cmd"
-$SetupCompleteCMD = @'
-PowerShell -NoL -Com Set-ExecutionPolicy Bypass -Force
-Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
-Start /Wait PowerShell -NoL -C Start-OOBEDeploy
-Start /Wait PowerShell -NoL -C Restart-Computer -Force
-'@
-$SetupCompleteCMD | Out-File -FilePath 'C:\OSDCloud\Scripts\SetupComplete.cmd' -Encoding ascii -Force
-
 
 #=======================================================================
 #   Restart-Computer
