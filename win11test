@@ -32,9 +32,6 @@ $OOBEDeployJson = @'
     "Autopilot":  {
                       "IsPresent":  false
                   },
-    "RemoveAppx":  [
-                    
-                   ],
     "UpdateDrivers":  {
                           "IsPresent":  true
                       },
