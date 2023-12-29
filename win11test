@@ -55,7 +55,7 @@ Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 Start /Wait PowerShell -NoL -C Restart-Computer -Force
 '@
-$SetupCompleteCMD | Out-File -FilePath 'C:\OSDCloud\Scripts\SetupComplete\SetupComplete.cmd' -Encoding ascii -Force
+$SetupCompleteCMD | Out-File -FilePath 'C:\OSDCloud\Scripts\SetupComplete.cmd' -Encoding ascii -Force
 
 
 #=======================================================================
