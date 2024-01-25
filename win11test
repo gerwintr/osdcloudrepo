@@ -25,13 +25,13 @@ $OSLanguage = 'en-us'
 
 #Set OSDCloud Vars
 $Global:MyOSDCloud = [ordered]@{
-    Restart = [bool]$False
+    Restart = [bool]$true
     RecoveryPartition = [bool]$true
     OEMActivation = [bool]$True
-    WindowsUpdate = [bool]$true
+    WindowsUpdate = [bool]$false
     WindowsUpdateDrivers = [bool]$false
-    WindowsDefenderUpdate = [bool]$true
-    SetTimeZone = [bool]$true
+    WindowsDefenderUpdate = [bool]$false
+    SetTimeZone = [bool]$false
     ClearDiskConfirm = [bool]$False
     ShutdownSetupComplete = [bool]$true
     SyncMSUpCatDriverUSB = [bool]$true
