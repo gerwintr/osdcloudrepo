@@ -13,6 +13,8 @@ $ComputerProduct = (Get-MyComputerProduct)
 $ComputerManufacturer = (Get-MyComputerManufacturer -Brief)
 #>
 
+#add some more logic to update surface drivers
+Update-OSDCloudSurfaceDriverCatalogJustInTime -UpdateDriverPacksJson
 
 #Variables to define the Windows OS / Edition etc to be applied during OSDCloud
 $OSVersion = 'Windows 11' #Used to Determine Driver Pack
